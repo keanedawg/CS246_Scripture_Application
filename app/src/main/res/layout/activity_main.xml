@@ -11,39 +11,6 @@
     tools:context="com.example.scripture_application.MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="12dp"
-        android:layout_marginStart="12dp" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:layout_below="@+id/myBook"
-        android:layout_alignLeft="@+id/myBook"
-        android:layout_alignStart="@+id/myBook"
-        android:layout_marginTop="26dp"
-        android:id="@+id/myChapter" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:layout_below="@+id/myChapter"
-        android:layout_alignLeft="@+id/myChapter"
-        android:layout_alignStart="@+id/myChapter"
-        android:layout_marginTop="28dp"
-        android:id="@+id/myVerse" />
-
-    <TextView
         android:text="Book:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -70,19 +37,6 @@
         android:layout_alignParentStart="true"
         android:id="@+id/verse_text" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:layout_marginTop="40dp"
-        android:id="@+id/myBook"
-        android:layout_below="@+id/textView"
-        android:layout_toRightOf="@+id/textView"
-        android:layout_toEndOf="@+id/textView"
-        android:layout_marginLeft="15dp"
-        android:layout_marginStart="15dp" />
-
     <Button
         android:text="Share"
         android:layout_width="wrap_content"
@@ -92,4 +46,39 @@
         android:layout_below="@+id/myVerse"
         android:layout_alignRight="@+id/textView"
         android:layout_alignEnd="@+id/textView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="37dp"
+        android:id="@+id/myBook"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/chapter_text"
+        android:layout_toEndOf="@+id/chapter_text"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="24dp"
+        android:id="@+id/myChapter"
+        android:layout_below="@+id/myBook"
+        android:layout_alignLeft="@+id/myBook"
+        android:layout_alignStart="@+id/myBook" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="28dp"
+        android:id="@+id/myVerse"
+        android:layout_below="@+id/myChapter"
+        android:layout_alignLeft="@+id/myChapter"
+        android:layout_alignStart="@+id/myChapter" />
 </RelativeLayout>
